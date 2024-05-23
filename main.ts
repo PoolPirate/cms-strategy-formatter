@@ -39,7 +39,7 @@ async function main() {
       return [
         {
           id: `${market.contractAddress}-lp`,
-          name: `${market.name} Perps LP`,
+          name: `${market.name} Perps LP`.replace("_", "/"),
           platform: "Levana",
           type: "Perps LP",
           method: "levana-pool-lp",
@@ -70,7 +70,7 @@ async function main() {
         },
         {
           id: `${market.contractAddress}-xlp`,
-          name: `${market.name} Perps xLP`,
+          name: `${market.name} Perps xLP`.replace("_", "/"),
           platform: "Levana",
           type: "Perps LP",
           method: "levana-pool-xlp",
